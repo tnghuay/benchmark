@@ -1,0 +1,13 @@
+apiVersion: "execution.securecodebox.io/v1"
+kind: Scan
+metadata:
+  name: trivy-image-scan
+spec:
+  scanType: trivy-image
+  parameters:
+    - "nginx:latest"
+  containers:
+    - name: benchmark # sidecar
+      image: benchmark:latest
+      imagePullPolicy: IfNotPresent
+      
