@@ -1,4 +1,4 @@
-Lab: Tạo container trivy-image-scan để lấy thông số bằng sidecar container  
+Lab: Tạo scan container để lấy thông số bằng sidecar container  
   
 Container sidecar benchmark lấy 3 thông số của container:  
 - duration_ms: thời gian chạy (ms)  
